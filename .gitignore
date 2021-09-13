@@ -38,3 +38,10 @@ CMakeLists.txt.user
 /.idea/
 # Ignore Visual Studio Code's working dir
 /.vscode/
+
+# My mac doesn't like making portable bundles 
+# (I think CMake is trying to work in /usr/local and doesn't have permission)
+# so I modified CMake/DolphinPostprocessBundle.cmake
+# to avoid build errors on my machine
+# - ThatsSlick
+CMake/DolphinPostprocessBundle.cmake
